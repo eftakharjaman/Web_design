@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+
+.bordbox{
+            border: 5px black solid;
+            height: 200px;
+            width: 300px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+
+        #box{
+            height: 200px;
+            width: 300px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            transform-origin: top center;
+            background-color: pink;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+        #box:hover{
+            transform: scale(1.6);
+        }
+
+        #dbox{
+            width: 100%;
+            height: 200px;
+            background-color: greenyellow;
+            transform: perspective(0) rotateX(0);
+            transition: transform 1s;
+        }
+        #dbox:hover{
+            transform: perspective(800px) rotateX(-180deg);
+        }
+        #dboxx{
+            width: 100%;
+            height: 200px;
+            background-color: greenyellow;
+            transform: rotateX(0);
+            transition: transform 1s;
+        }
+        #dboxx:hover{
+            transform: perspective(800px) rotateX(180deg);
+        }
+        #dboxy{
+            width: 100%;
+            height: 200px;
+            background-color: green;
+            transform: perspective(0) rotateY(0);
+            transition: transform 1s;
+        }
+        #dboxy:hover{
+            transform: perspective(800px) rotateY(180deg);
+        }
+        #dboxyy{
+            width: 100%;
+            height: 200px;
+            background-color: green;
+            transform: perspective(0) rotateY(0);
+            transition: transform 1s;
+        }
+        #dboxyy:hover{
+            transform: perspective(800px) rotateY(-180deg);
+        }
+        #dboxxy{
+            width: 100%;
+            height: 200px;
+            background-color: green;
+            transform: perspective(0) scaleX(1);
+            transition: transform 1s;
+        }
+        #dboxxy:hover{
+            transform: perspective(800px) scale3D(-1,-1,2);
+        }
+        .psbordbox{
+            border: 30px black solid;
+            border-image-source: url(ej.jpg);
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            border-image-outset: 20px;
+            border-image-width: 20px;
+            height: 200px;
+            width: 400px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            perspective: 0px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+        }
+        #psbox{
+            width: 100%;
+            height: 200px;
+            background-color: red;
+            transform: rotateX(0);
+            transition: transform 1s;
+            transform-origin: top;
+        }
+        #psbox:hover{
+            transform: perspective(800px) rotateX(180deg);
+        }
+
+        .pbbordbox{
+            width: 350px;
+            height: 200px;
+            margin-top: 50px;
+            border: 5px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            perspective: 800px;
+        }
+        #pbbox{
+            width: 100%;
+            height: 200px;
+            background-color: tomato;
+            transform: rotateZ(0);
+            transform-origin: top;
+            transition: transform 1s;
+        }
+        #pbbox:hover{
+            transform: rotateZ(90deg);
+        }
+
+        .pdbordbox{
+            width: 400px;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid black;
+            perspective: 800px;
+        }
+        #pdbox{
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            transform: translate3d(0,0,0) scale(1);
+            transition: transform 1s;
+        }
+        #pdbox:hover{
+            transform: translate3d(80px,80px,0px) scaleX(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">EJ Mahadi</div>
+    <div class="bordbox">
+        <div id="dbox"> </div>
+    </div>
+    <div class="bordbox">
+        <div id="dboxx"> </div>
+    </div>
+    <div class="bordbox">
+        <div id="dboxy"> </div>
+    </div>
+    <div class="bordbox">
+        <div id="dboxyy"> </div>
+    </div>
+    <div class="bordbox">
+        <div id="dboxxy"> </div>
+    </div>
+    <div class="psbordbox">
+        <div id="psbox"> </div>
+    </div>
+    <div class="pbbordbox">
+        <div id="pbbox"> </div>
+    </div>
+
+    <div class="pdbordbox">
+        <div id="pdbox"> </div>
+    </div>
+
+    <div style="height: 400px;">
+
+    </div>
+    
+</body>
+</html>
