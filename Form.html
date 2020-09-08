@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #name:focus{
+             border: 2px solid greenyellow;
+        }
+        input[type='checkbox']:checked{
+            box-shadow: 0 0 0 2px red;
+        }
+        input[type='radio']:checked + label{
+            color: greenyellow;
+        }
+        input[type='number']:in-range{
+            background-color: greenyellow;
+        }
+        input[type='number']:out-of-range{
+            background-color: gray;
+        }
+        input:invalid{
+            border: 2px solid red;
+            background-color: pink;
+        }
+        input:valid{
+            border: 2px solid green;
+        }
+        .afbf{
+            text-align: center;
+        }
+        .afbf:hover::before{
+            content: "Hello";
+            background-color: springgreen;
+            color: tomato;
+        }
+        .afbf:hover::after{
+            content: "I am a student";
+            background-color: springgreen;
+            color: skyblue;
+        }
+        p:hover::after{
+            content: attr(class);
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label>Name</label> <input type="text" id="name" placeholder="Enter Your Name" required>
+        <br>
+        <label>Password</label> <input type="password" id="pass" placeholder="Enter Password"><br><br>
+        <label>Item</label> <input type="checkbox">Mobile <input type="checkbox">Lapto <input type="checkbox">Hadphone <input type="checkbox">TV <br><br>
+        <label for="gender">Gender</label> <input type="radio"  name="gender"> <label for="gender">Male</label><input type="radio" name="gender"> <label for="gender"><label for="gender">Female</label><br><br>
+        
+        <label>Your Country:</label>
+        <select name="" id="">
+                <option value="">Bangladesh</option>
+                <option value="">Australia</option>
+                <option value="">USA</option>
+                <option value="">CANADA</option>
+            </select><br>
+
+            <label>Age</label><input type="number" min="5" max="30"><br><br>
+            <label>Submin Your Emain</label><input type="email" placeholder="Enter Email Address" required><br><br>
+        <input type="submit">
+    </form>
+    <div class="afbf">
+        <p>My name is Ej Mahadi</p>
+    </div>
+    <p class="est">Eastern University</p>
+</body>
+</html>

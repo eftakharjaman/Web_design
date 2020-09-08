@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: wheat;
+            counter-reset: ejcounter 0;
+        }
+        h1{
+            counter-reset: ejsubcounter 0;
+        }
+        h1::before{
+            content: "Chapter:" counter(ejcounter);
+            counter-increment: ejcounter 1;
+            color: tomato;
+        }
+        h2::before{
+            content: "Part:" counter(ejcounter) "." counter(ejsubcounter);
+            counter-increment: ejsubcounter 1;
+            padding-left: 40px;
+            color: green;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Little angel 
+
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Eos nisi facilis fuga doloremque natus magnam 
+                asperiores. Consequatur, iste dolorem hic reiciendis minima 
+                recusandae maiores quis repudiandae quod quasi. Nostrum illum fugit 
+                diandae aut! Dolores, tenetur aliquid placeat doloremque iure, in nostrum necessitatibus quibusdam est laborum, officiis ad fugiat eveniet ratione.
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Eos nisi facilis fuga doloremque natus magnam 
+                asperiores. Consequatur, iste dolorem hic reiciendis minima 
+                recusandae maiores quis repudiandae quod quasi. Nostrum illum fugit 
+                diandae aut! Dolores, tenetur aliquid placeat doloremque iure, in nostrum necessitatibus quibusdam est laborum, officiis ad fugiat eveniet ratione.
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Eos nisi facilis fuga doloremque natus magnam 
+                asperiores. Consequatur, iste dolorem hic reiciendis minima 
+                recusandae maiores quis repudiandae quod quasi. Nostrum illum fugit 
+                diandae aut! Dolores, tenetur aliquid placeat doloremque iure, in nostrum necessitatibus quibusdam est laborum, officiis ad fugiat eveniet ratione.
+            </pre>
+        </h2>
+    </h1>
+    
+    <h1>
+        Big Fisher Man
+        <h2>
+            <pre>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quidem harum iure ab autem tempore tempora enim veniam? Quisquam, 
+                eius quibusdam alias reiciendis ea inventore veritatis assumenda et, expedita quia atque!
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quidem harum iure ab autem tempore tempora enim veniam? Quisquam, 
+                eius quibusdam alias reiciendis ea inventore veritatis assumenda et, expedita quia atque!
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quidem harum iure ab autem tempore tempora enim veniam? Quisquam, 
+                eius quibusdam alias reiciendis ea inventore veritatis assumenda et, expedita quia atque!
+            </pre>
+        </h2>
+    </h1>
+    
+    <h1>
+        Poor Villagers
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda asperiores totam similique, quam obcaecati rem quaerat 
+                facere enim quidem ad voluptas ea excepturi amet debitis autem nostrum dolor saepe eaque.
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda asperiores totam similique, quam obcaecati rem quaerat 
+                facere enim quidem ad voluptas ea excepturi amet debitis autem nostrum dolor saepe eaque.
+            </pre>
+        </h2>
+        <h2>
+            <pre>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Assumenda asperiores totam similique, quam obcaecati rem quaerat 
+                facere enim quidem ad voluptas ea excepturi amet debitis autem nostrum dolor saepe eaque.
+            </pre>
+        </h2>
+    </h1>
+</body>
+</html>
